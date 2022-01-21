@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #091a0f;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 24px;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.section-title {
+  color: #98a39b;
+  margin-bottom: 8px;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow: hidden;
+}
+
+.image {
+  margin-right: 16px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+section .image:first-child {
+  transform-origin: left center;
+}
+section .image:last-child {
+  transform-origin: right center;
+}
+
+.image-active {
+  border-color: white;
+  transform: scale(1.01);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-open {
+  display: block;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80%;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #030b17;
+}
+
+.card-image {
+  align-self: center;
+}
